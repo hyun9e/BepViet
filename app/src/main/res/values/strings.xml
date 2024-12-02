@@ -1,0 +1,50 @@
+<resources>
+    <!--    General    -->
+    <string name="app_name">Bếp Việt</string>
+    <string name="slogan">Ẩm thực trong tầm tay</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!--    splash screen    -->
+    <string name="splash_blob">splash_blob</string>
+    <string name="background">Background</string>
+    <!--    Login/Sign up    -->
+    <string name="login">Đăng nhập</string>
+    <string name="dang_ky">Đăng ký</string>
+    <string name="nhap_lai_mat_khau">Nhập lại mật khẩu</string>
+    <string name="mat_khau">Mật khẩu</string>
+    <string name="tai_khoan">Tài khoản</string>
+    <string name="ten_cua_ban">Tên của bạn</string>
+    <string name="email">Email</string>
+    <!--    Bottom nav  -->
+    <string name="title_home">Trang chủ</string>
+    <string name="title_category">Danh mục</string>
+    <string name="title_profile">Tài khoản</string>
+    <!--    Food item attributes  -->
+    <string name="food_name">Food name</string>
+    <string name="food_thumbnail">Food_thumbnail</string>
+    <string name="see_more">Xem thêm</string>
+    <string name="category_thumbnail">category_thumbnail</string>
+    <string name="category_name">Category name</string>
+    <string name="profile_name">Khách hàng ẩn danh</string>
+    <string name="lorem_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+    </string>
+    <string name="blank">---</string>
+    <!--    Recipe details  -->
+    <string name="recipe_image">Recipe Image</string>
+    <string name="detail_name">"Tên món ăn:"</string>
+    <string name="detail_time_as_minute">"Thời gian nấu (phút):"</string>
+    <string name="detail_ingredients">"Nguyên Liệu:"</string>
+    <string name="detail_category">Danh mục:</string>
+    <string name="description">"Hướng dẫn:"</string>
+    <string name="go_back">Quay lại</string>
+    <string name="recipe_op">Người đăng:</string>
+    <string name="login_as_guest">Tếp tục với tư cách là khách</string>
+    <string name="string_login_signup">Đăng ký ngay</string>
+    <string name="loading">Đang tải</string>
+    <string name="delete_recipe">Delete Recipe</string>
+    <string name="add_to_favorite">Add to favorite</string>
+</resources>

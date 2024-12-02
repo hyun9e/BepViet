@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "622055177498",
+    "project_id": "bepviet02-d9354",
+    "storage_bucket": "bepviet02-d9354.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622055177498:android:e8f8e2822ec405938b40a3",
+        "android_client_info": {
+          "package_name": "com.example.bepviet02"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVTfVQZEgnRrEU--dLDtNTL0u6zwRL9LI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
