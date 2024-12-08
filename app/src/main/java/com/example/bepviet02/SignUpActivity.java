@@ -45,7 +45,7 @@ public class SignUpActivity extends AppCompatActivity {
         } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             Toast.makeText(this, "Cần nhập email hợp lệ", Toast.LENGTH_SHORT).show();
         } else if (!password.equals(confirmPassword)) {
-            Toast.makeText(this, "Mật khẩu không khớp", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Mật khẩu xác nhận không khớp", Toast.LENGTH_SHORT).show();
         } else if (password.length() < 6) {
             Toast.makeText(this, "Mật khẩu phải có ít nhất 6 ký tự", Toast.LENGTH_SHORT).show();
         } else {
@@ -58,12 +58,12 @@ public class SignUpActivity extends AppCompatActivity {
         }
     }
 
+    // Create new user in Firebase Authentication
     private void createNewUser(String name, String email, String password) {
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
                     pleaseWaitDialog.dismiss();
                     if (task.isSuccessful()) {
-                        Toast.makeText(SignUpActivity.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
                         saveUserInfoToDatabase(name, email);
                     } else {
                         Toast.makeText(this, "Đăng ký thất bại", Toast.LENGTH_SHORT).show();
@@ -72,6 +72,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     }
 
+    // Save user information to Firebase Realtime Database
     private void saveUserInfoToDatabase(String name, String email) {
         DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("Users");
         String userId = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
@@ -79,6 +80,7 @@ public class SignUpActivity extends AppCompatActivity {
         dbRef.child(userId).setValue(user).addOnCompleteListener(task -> {
             pleaseWaitDialog.dismiss();
             if (task.isComplete()){
+                Toast.makeText(SignUpActivity.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(SignUpActivity.this, MainActivity.class));
                 finishAffinity();
             }
